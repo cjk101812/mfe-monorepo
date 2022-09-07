@@ -1,0 +1,19 @@
+<div class="content">
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <img src="https://raw.githubusercontent.com/adrianiskandar/ModuleFederationWebComponents/085f37fd04a3d058ae3bc332a2e68f9cd1698632/apps/angular-host/src/assets/angular-icon.svg" width="100px" alt="Angular Icon" />
+      <h1>Angular Host</h1>
+    </div>
+    <ul class="remote-menu">
+      <li><a routerLink="/">Home</a></li>
+
+      <li><a routerLink="angular-app">Angular App</a></li>
+
+      <li><a routerLink="react-app">React App</a></li>
+    </ul>
+    <p class="user" *ngIf="user">Hello {{this.user}}!</p>
+  </div>
+  <div class="federated-module">
+    <router-outlet></router-outlet>
+  </div>
+</div>
